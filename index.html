@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- empêcher le référencement -->
+<meta name="robots" content="noindex, nofollow, noarchive" />
+
+<title>materielvideo!!!!</title>
+
+<!-- pour les mobiles -->
+<meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0" />
+
+<!-- style -->
+ <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- favicon -->
+<link rel="shortcut icon" type="image/png" href="img/ic3.png"/>
+</head>
+
+
+
+<body class="scroll-container">
+	<header>
+    <h1>Matériel vidéo</h1>
+    <p class="premier" id="test">
+      À partir d’images de caméras, cassettes, lecteurs et mini-télé, j’explore l’évolution du matériel vidéo — entre pratiques semi-pro et amateurs. 
+      Par le code, je détourne leur fonction : au lieu que les caméras produisent des images, c’est moi qui altère leur image, en rejouant leurs bugs, 
+      grains et distorsions.
+
+    </p>
+     <br>
+       <h2>sources :</h2>
+       <p>
+        source 1 : <a href="https://gallica.bnf.fr/ark:/12148/btv1b55013022r">Caméscope Sony CCD-V200E</a><br>
+        source 2 : <a href="https://gallica.bnf.fr/ark:/12148/btv1b55013019g">Magnétoscope Radiola 20VR20</a><br>
+        source 3 : <a href="https://gallica.bnf.fr/ark:/12148/btv1b55008767q.r=Sony%20AV-3420CE?rk=21459%3B2">Portapak Sony AV-3420CE pour bande 1/2 pouce</a>
+       </p>
+  </header>
+
+  <figure>
+    <video autoplay="true" muted="true" src="img/video1.mp4" loop="true"></video>
+    <figcaption >avec une caméra en main on a plein d'idées qui bougent</figcaption>
+  </figure>
+  
+
+  <video class="fullPage" autoplay="true" muted="true" src="img/video2.mp4" loop="true"></video>
+ <!-- <aside>
+ </aside> -->
+
+  <figure>
+    <video autoplay="true" muted="true" src="img/video3.mp4" loop="true"></video>
+    <figcaption >bordel bordel bordel bordel.......on filme avec quelle caméra déjà....?</figcaption>
+  </figure>
+  
+  
+  <video class="fullPage" autoplay="true" muted="true" src="img/video4.mp4" loop="true"></video>
+
+  <figure>
+    <video class="hoverPlay" muted="true" src="img/video5.mp4" loop="true"></video>
+    <figcaption>allez....ça tourne la caméra et ça filme pour de bon cette fois</figcaption>
+  </figure>
+
+  <video class="fullPage" autoplay="true" muted="true" src="img/video6.mp4" loop="true"></video>
+
+  <figure>
+    <video class="hoverPlay" muted="true" src="img/video7.mp4" loop="true"></video>
+    <figcaption>la cassette est prête!!!!!! lançons le film...........</figcaption>
+  </figure>
+
+  
+  <video class="fullPage hoverPlay" muted="true" src="img/video8.mp4" loop="true"></video>
+
+  <figure>
+    <video autoplay="true" muted="true" src="img/video9.mp4" loop="true"></video>
+    <figcaption>oh non les aléas de la caméra.....le film bouge de partout.....bon....passons aux crédits</figcaption>
+  </figure>
+
+  <video class="fullPage" autoplay="true" muted="true" src="img/video10.mp4" loop="true"></video>
+
+
+  
+
+
+  </body>
+  
+</html>
+
+
+
+<!-- ne pas toucher  -->
+<script>
+const container = document.querySelector('html');
+document.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    container.scrollLeft += e.deltaY;
+}, { passive: false });
+
+const video = document.querySelectorAll('.hoverPlay');
+video.forEach((v) => {
+  v.addEventListener('mouseenter', () => {
+  v.play();
+});
+v.addEventListener('mouseleave', () => {
+  v.pause();
+  v.currentTime = 0; // revient au début
+});
+})
+
+</script>
