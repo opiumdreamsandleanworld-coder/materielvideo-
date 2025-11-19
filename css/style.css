@@ -49,6 +49,7 @@ h1{
 	font-size: var(--fontSizeH1);
 	font-style: italic;
 	margin-bottom: 10px;
+	font-family: "termm";
 }
 
 h2{
@@ -56,6 +57,7 @@ h2{
 	font-size: var(--fontSizeH2);
 	font-style: italic;
 	margin-bottom: 10px;
+	font-family: "termm";
 }
 
 body{
@@ -124,15 +126,17 @@ a:hover {
 
 
 @font-face {
-  font-family: "erodeit";
+  font-family: "termm";
   src:
-    url("../Erode-MediumItalic.woff") format("woff");
+    url("../terminal-grotesque-webfont.woff") format("woff");
 }
 
 
 
-.class{
-	font-family : "NAME";
+.premier{
+	margin-top:2vw;
+	background-color: grey;
+	margin-bottom:2vw;
 }
 
 /* canvas{display: none;} */
