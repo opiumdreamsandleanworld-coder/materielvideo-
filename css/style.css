@@ -28,6 +28,7 @@ html{
  display: flex;
  background-color: var(--couleurFond);
  color: var(--couleurDuTexte);
+ cursor:crosshair;
 
 }
 
@@ -155,4 +156,5 @@ a:hover {
 }
 
 /* canvas{display: none;} */
+
 
