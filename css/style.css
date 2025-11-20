@@ -14,7 +14,7 @@
 
 
   /* taille des textes :  */
-  --fontsizeGlobal : 1.1em;
+  --fontsizeGlobal : 0.8em;
   --fontSizeH1 : 40px;
   --fontSizeH2 : 40px;
 }
@@ -152,9 +152,10 @@ a:hover {
 	margin-top:2vw;
 	background-color: grey;
 	margin-bottom:2vw;
-	font-size:1.2em
+	font-size:0.9em
 }
 
 /* canvas{display: none;} */
+
 
 
